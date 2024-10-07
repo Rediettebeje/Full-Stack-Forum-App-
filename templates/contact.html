@@ -1,0 +1,43 @@
+<!-- 
+ HTML file containing a contact page form. This form uses the post method and HTML submit and clear buttons. 
+
+ -->
+
+    <div class="body-div">
+        <div class="container-fluid">
+            <div id="msg">
+                <!-- This is a blank area for us to talk to the use -->
+                <br>
+            </div>
+            <form id="email-form" name="email-form" class="mx-auto contact-form" action="../email.php" method="post">
+                <div class="mb-3 mt-5">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" maxlength="64">
+                </div>
+                <div class="mb-3">
+                    <label for="from" class="form-label">Return Email:</label>
+                    <input type="text" class="form-control" id="returnEmail" name="from" maxlength="64">
+                </div>
+                <div class="mb-3">
+                    <label for="reEnterReturnEmail" class="form-label">Re-Enter Return Email:</label>
+                    <input type="text" class="form-control" id="reEnterReturnEmail" name="reEnterReturnEmail"
+                        maxlength="64">
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject:</label>
+                    <input type="text" class="form-control" id="subject" name="subject" maxlength="64">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea type="text" class="form-control" id="message" name="message" maxlength="1000"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mt-5" id="send">Send</button>
+                <button type="button" class="btn btn-primary mt-5" id="clear">Clear</button>
+            </form>
+        </div>
+    </div>
+    <!-- jQuery must be loaded before any other JS that uses jQuery -->
+    <script src="../js/jquery.min.js"></script>
+     <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+

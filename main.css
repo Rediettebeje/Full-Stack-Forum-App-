@@ -1,0 +1,140 @@
+/* Mobile-first styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #edede8;
+}
+
+form {
+  width: 100%;
+}
+
+input.form-control {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  width: 100%;
+  border: none;
+  background: radial-gradient(rgb(50, 162, 177), #063770);
+}
+
+h1,
+p {
+  color: rgb(50, 162, 177);
+}
+h1 {
+  font-size: 18px;
+}
+.form-label {
+  color: rgb(50, 162, 177);
+}
+
+.characters {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.content p {
+  margin-top: 10px;
+}
+.menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 3px 1px;
+}
+
+footer {
+  background: #bdd7ff;
+  color: white;
+}
+
+.nav-section {
+  padding-top: 10px;
+  height: 60px;
+  background: #5681c4;
+}
+
+.body-div {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.centered {
+  text-align: center;
+}
+
+/* Media queries for tablets and above */
+@media (min-width: 800px) {
+  form {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  .characters {
+    font-size: 1.8rem;
+  }
+}
+
+/* Media queries for desktops and larger screens */
+@media (min-width: 1000px) {
+  form {
+    width: 40%;
+  }
+
+  input.form-control {
+    font-size: 1.2rem;
+  }
+
+  .characters {
+    font-size: 1.9rem;
+  }
+  .img {
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+  }
+  .content {
+    display: flex;
+    align-items: flex-start;
+  }
+  .content p {
+    text-align: justify;
+    margin: 0;
+    width: 60%;
+  }
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}

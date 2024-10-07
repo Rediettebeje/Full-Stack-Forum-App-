@@ -1,0 +1,48 @@
+<!-- 
+ HTML file containing a form. This form uses the post method and HTML submit buttons. 
+
+ -->
+
+<div class="body-div">
+<div class="container-fluid">
+    <div id="msg">
+        <!-- This is a blank area for us to talk to the use -->
+        <br>
+    </div>
+    <form class="mx-auto" action="../processtitle.php" method="post">
+
+        <div class="mb-3 mt-5">
+            <label for="title" class="form-label">Title:</label>
+            <input type="text" class="form-control" id="title" name="title" maxlength="64">
+        </div>
+        <div class="mb-3">
+            <label for="favoriteDrink" class="form-label">Favorite Drink:</label>
+            <input type="text" class="form-control" id="favorite_drink" name="favorite_drink" maxlength="64">
+        </div>
+        <div class="mb-3">
+            <label for="petName" class="form-label">Pet’s Name:</label>
+            <input type="text" class="form-control" id="petName" name="pet_name" maxlength="64">
+        </div>
+        <div class="mb-3">
+            <label for="fictionalPlace" class="form-label">Favorite Fictional Place:</label>
+            <input type="text" class="form-control" id="fictionalPlace" name="fictional_place" maxlength="64">
+        </div>
+        <div class="mb-3">
+            <label for="realPlace" class="form-label">Favorite Real Place:</label>
+            <input type="text" class="form-control" id="realPlace" name="real_place" maxlength="64">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="text" class="form-control" id="email" name="email" maxlength="64">
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-5" id="submit">Submit</button>
+        <button type="button" class="btn btn-primary mt-5" id="clear">Clear</button>
+    </form>
+</div>
+</div>
+    <!-- jQuery must be loaded before any other JS that uses jQuery -->
+    <script src="../js/jquery.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/title.js"></script>
+  
